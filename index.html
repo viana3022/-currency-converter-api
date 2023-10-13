@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--Google fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <!--Stylesheets-->
+    <link rel="stylesheet" href="./CSS/style.css"/>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="app-details">
+            <img src="./img/app-icon.png" class="app-icon">
+            <h1 class="app-title">Conversor Moedas</h1>
+        </div>
+        <label for="amount">Quantia:</label>
+        <input type="number" id="amount" value="100">
+        <div class="dropdowns">
+            <select id="from-currency-select"></select>
+            <select id="to-currency-select"></select>
+        </div>
+        <button id="convert-button">Converter</button>
+        <p id="result"></p>
+    </div>
+
+
+    <!--Script With array of supported Country Codes-->
+    <script src="./JS/currency-codes.js"></script>
+
+    <!--Script with API key-->
+    <script src="./JS/api-key.js"></script>
+
+    <!--Script-->
+    <script src="./JS/script.js"></script>
+</body>
+</html>
